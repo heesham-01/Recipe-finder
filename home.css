@@ -1,0 +1,860 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+:root {
+    --primary-color: #e67e22;
+}
+
+.overall-container{
+    width: 100%;
+    height: auto;
+}
+
+.header-container{
+    width: 100%;
+    height: 6.5rem;
+    padding: 1.375rem 6.25rem 1.375rem 6.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigations-container{
+    width: 23.813rem;
+    height: 56rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    column-gap: 0.75rem;
+}
+
+.nav-container{
+    width: 14.5rem;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.home-nav{
+    width: 4.5rem;
+    height: 3.5rem;
+    padding: 1rem 0.75rem 1rem 0.75rem;
+    column-gap: 0.625rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    text-align: center
+}
+
+.home-nav:hover{
+    background-color: #f5f5dc
+}
+.home-nav:hover:active{
+    background-color: #f2f2df;
+}
+
+.home-nav h5{
+    font-weight: 400;
+}
+
+.explore-recipe-container{
+    width: 9.25rem;
+    height: 3.5rem;
+    padding: 1rem 0.75rem 1rem 0.75rem;
+    column-gap: 0.625rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.explore-recipe-container:hover{
+    background-color: #f5f5dc;
+}
+.explore-recipe-container:active{
+    background-color: #f2f2df
+}
+
+.explore-recipe-container h5{
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.primary-button{
+    width: 8.563rem;
+    height: 3.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 0.75rem;
+    color: white;
+    cursor: pointer;
+}
+
+.primary-button:hover{
+    background-color: #bc5d00;
+}
+.primary-button:active{
+    background-color: #9c4500;
+}
+
+.hero-section{
+    width: 100%;
+    height: 41rem;
+    padding: 3.125rem 6.25rem 3.125rem 6.25rem;
+    background-color: #fbfae8;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.25rem;
+}
+
+.heading-text{
+    width: 32.625rem;
+    height: 8.75rem;
+    row-gap: 0.625rem;
+}
+
+.heading-text p{
+    font-weight: 700;
+    font-size: 2.5rem;
+}
+
+.cookit{
+    font-family: "Pacifico", static;
+    font-style: normal;
+    color: #e67e22;
+    font-size: 2.5rem;
+}
+
+.hero-text{
+    width: 32.625rem;
+    height: 18.5rem;
+}
+
+.chef-logo{
+    text-align: center;
+    color: #e67e22;
+}
+
+.chef-logo img{
+    color: #e67e22;
+}
+
+.hero-paragraph{
+    width: 32.625rem;
+    height: 4.5rem;
+}
+
+.hero-paragraph p{
+    letter-spacing: -0.013rem;
+    font-size: 1.5rem;
+    color: #3b0d00;
+    font-weight: 400;
+}
+
+.heading-paragraph{
+    width: 32.625rem;
+    height: 14.75rem;
+    max-width: 37.5rem;
+    gap: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.hero-container{
+    width: 100%;
+    height: 25rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.25rem;
+}
+
+.parent-bottom{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+}
+
+.bottom-hero-container{
+    width: 31.25rem;
+    height: 7.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+
+.search-container{
+    width: 100%;
+    height: 3.5rem;
+    column-gap: 0.75rem;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-engine{
+    width: 23.938rem;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    background-color: white;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.5rem;
+    border: 1px solid #e2e2e2;
+}
+
+.search-engine input{
+    border: none;
+    outline: none;
+    flex: 1;
+}
+
+.search-button{
+    width: 6.563rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    background-color: #e67e22;
+    color: white;
+    border: none;
+    outline: none;
+    cursor: pointer;
+}
+
+.search-button:hover{
+    background-color: #bc5d00;
+}
+
+.search-button:active{
+    background-color: #9c4500;
+}
+
+.find-container{
+    width: 31.25rem;
+    height: 2.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.375rem;
+}
+
+.finder{
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.375rem;
+}
+
+.fried-rice{
+    width: fit-content;
+    height: 2.5rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+
+.fried-rice p{
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.jollof-rice{
+    width: fit-content;
+    height: 2.5rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+
+.jollof-rice p{
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.peppered-chicken{
+    width: fit-content;
+    height: 2.5rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+
+.peppered-chicken p{
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.fired-potato{
+    width: 6.875rem;
+    height: 2.5rem;
+    padding: 0.75rem;
+    border-radius: 0.5rem;
+    background-color: white;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+
+.fired-potato p{
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 400;
+}
+
+.try p{
+    font-size: 0.875rem;
+    line-height: 1rem;
+    font-family: "Open Sans", sans-serif;
+    font-weight: 600;
+    color: black;
+}
+
+/* Section */
+.section{
+    width: 100%;
+    height: auto;
+    padding: 3.125rem 6.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.25rem;
+}
+
+.section-title{
+    width: 17.688rem;
+    height: 2.25rem;
+}
+
+.section-title h3{
+    font-size: 1.5rem;
+    font-weight: 600;
+    font-family: 'poppins', sans-serif;
+    color: #e67e22;
+}
+
+.recipe-block{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    column-gap: 1.5rem;
+    flex-wrap: wrap;
+    row-gap: 1.5rem;
+}
+
+/* Recipe container */
+.recipe-container{
+    width: 21.5rem;
+    height: 24.75rem;
+    min-width: 18.75rem;
+    max-width: 21.875rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e2e2e2;
+    cursor: pointer;
+}
+
+.recipe-container:hover{
+    background-color: #f9f9f9
+}
+
+.container-two{
+    width: 21.5rem;
+    height: 24.75rem;
+    min-width: 18.75rem;
+    max-width: 21.875rem;
+    border-radius: 0.75rem;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e2e2e2;
+}
+
+.chinese-rice-image{
+    width: 100%;
+}
+
+.chinese-rice-image img{
+    width: 100%;
+    height: 15.625rem;;
+    border-top-left-radius: 0.75rem;
+    border-top-right-radius: 0.75rem;
+}
+
+.recipe-text-block{
+    width: 21.5rem;
+    height: 9.125rem;
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.recipe-title{
+    width: 18.5rem;
+    height: 1.5rem;
+}
+
+.recipe-title p{
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.benefit-container{
+    width: 18.5rem;
+    height: 1.313rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.rating-container{
+    width: 2.563rem;
+    height: 1.313rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.313rem;
+}
+
+.rating-container i{
+    width: 1rem;
+    height: 1rem;
+    color: #c3cd02;
+}
+
+.rating-container p{
+    width: 1.25rem;
+    height: 1.313rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+    color: #c3cd02;
+}
+
+.time-container{
+    width: 4.938rem;
+    height: 1.313rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: center;
+    column-gap: 0.313rem;
+}
+
+.time-container i{
+    width: 1rem;
+    height: 1rem;
+}
+
+.four-five{
+    width: 1.125rem;
+    height: 1.313rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.mins{
+    width: 1.125rem;
+    height: 1.313rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.serving-container{
+    width: 5.188rem;
+    height: 1.313rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.625rem;
+    align-items: center;
+}
+
+.two{
+    width: 0.563rem;
+    height: 1.313rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.people{
+    width: 3rem;
+    height: 1.313rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.view-recipe-container{
+    width: 6.563rem;
+    height: 1.313rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.25rem;
+    cursor: pointer;
+    justify-content: start;
+    align-items: center;
+}
+
+.view-text-container{
+    width: 5.313rem;
+    height: 1.313rem;
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    font-size: 0.875rem;
+}
+
+.anchor:hover{
+    color: #e67e22;
+}
+
+/* Section Two */
+.section-two-container{
+    width: 100%;
+    height: 43.401rem;
+    padding: 3.125rem 6.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.25rem;
+}
+
+.about-cookit-container{
+    width: 9.938rem;
+    height: 2.25rem;
+}
+
+.about-cookit-container h4{
+    font-family: 'poppins', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #e67e22;
+}
+
+.about-cookit-paragraph{
+    width: 100%;
+    height: 3rem;
+}
+
+.about-cookit-paragraph p{
+    font-family: 'poppins', sans-serif;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #414845;
+}
+
+.section-two-last{
+    width: 100%;
+    height: 27.401rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 3.125rem;
+}
+
+.features-block{
+    width: 31.25rem;
+    height: 23rem;
+    max-width: 31.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.text-group{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    border: 1px solid #e67e22;
+}
+
+.text-group:hover{
+    background-color: #bc5d00;
+    color: white;
+
+}
+
+.core-features{
+    width: 100%;
+    height: 6.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+}
+
+.search-heading{
+    width: 28.25rem;
+    height: 1.5rem;
+}
+
+.search-heading h5{
+    font-family: 'poppins', sans-serif;
+    color: #1b1b1b;
+}
+
+.search-paragraph{
+    width: 28.25rem;
+    height: 1.5rem;
+}
+
+.search-paragraph p{
+    font-family: 'poppins', sans-serif;
+    font-weight: 400;
+    color: #414845;
+}
+
+.about-us-section-image{
+    width: 33.125rem;
+    height: 27.401rem;
+}
+
+.cta-section{
+    width: 100%;
+    height: 23rem;
+    padding: 2.25rem 3.125rem;
+}
+
+.cta-content{
+    width: 100%;
+    height: 18.5rem;
+    border-radius: 3.125rem;
+    padding: 3.125rem;
+    background-color: #3b0d00;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 2.25rem;
+}
+
+.cta-text-title{
+    width: 50rem;
+    height: 6.5rem;
+    max-width: 50rem;
+}
+
+.cta-text-title h5{
+    text-align: center;
+    font-size: 1.5rem;
+    color: white;
+    font-weight: 600;
+}
+
+.cta-text-paragraph{
+    width: 50rem;
+    height: 1.5rem;
+}
+
+.cta-text-paragraph{
+    text-align: center;
+    font-size: 1rem;
+    font-weight: 400;
+    color: white;
+}
+
+.button-contact-us{
+    width: 8.563rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    padding: 1rem 1.5rem;
+    background-color: #e67e22;
+    color: white;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.button-contact-us:hover{
+    background-color: #bc5d00;
+    color: white;
+}
+
+.button-contact-us:active{
+    background-color: #9c4500;
+}
+
+/* Footer Section */
+.footer-section{
+    width: 100%;
+    height: 15.375rem;
+    padding: 3.125rem 6.25rem;
+    background-color: #f5f5dc;
+}
+
+.top-footer-container{
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #1c1c12;
+    padding-bottom: 1.5rem;
+}
+
+.logo-and-tagline{
+    width: 12.75rem;
+    height: 5.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+}
+
+.logo-tagline{
+    width: 7.75rem;
+    height: 3.75rem;
+    padding: 0.5rem 0.625rem;
+}
+
+.tagline-text{
+    width: 12.75rem;
+    height: 1.5rem;
+}
+
+.tagline-text p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-buttons-navigations{
+    width: 7.75rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+
+.footer-buttons-navigations p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.social-block{
+    width: 17rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+
+.social-block-heading{
+    width: 5.063rem;
+    height: 1.25rem;
+}
+
+.social-block-heading h5{
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.socials{
+    width: 17rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.media{
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 6.25rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav:hover{
+    color: #414834;
+}
+
+.nav:active{
+    color: #303030;
+}
+
+/* Right Reserved */
+.right-reserved{
+    width: 100%;
+    height: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.designed-by{
+    width: 10.75rem;
+    height: 1.25rem;
+}
+
+.designed-by p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.016rrem;
+    line-height: 1.25rem;
+}
+
+.abdulbasit{
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1c1c12;
+}
+
+.cookit-2025{
+    width: 15rem;
+    height: 1.25rem;
+}
+
+.cookit-2025 p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.016rem;
+    color: #1c1c12;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+

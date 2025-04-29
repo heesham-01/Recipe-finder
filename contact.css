@@ -1,0 +1,483 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Mona+Sans:ital,wght@0,200..900;1,200..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+}
+:root {
+    --primary-color: #e67e22;
+}
+
+.header-container{
+    width: 100%;
+    height: 6.5rem;
+    padding: 1.375rem 6.25rem 1.375rem 6.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.navigations-container{
+    width: 23.813rem;
+    height: 56rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    column-gap: 0.75rem;
+}
+
+.nav-container{
+    width: 14.5rem;
+    height: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+}
+
+.home-nav{
+    width: 4.5rem;
+    height: 3.5rem;
+    padding: 1rem 0.75rem 1rem 0.75rem;
+    column-gap: 0.625rem;
+    cursor: pointer;
+    border-radius: 0.75rem;
+    text-align: center
+}
+
+.home-nav:hover{
+    background-color: #f5f5dc
+}
+.home-nav:hover:active{
+    background-color: #f2f2df;
+}
+
+.home-nav h5{
+    font-weight: 400;
+}
+
+.explore-recipe-container{
+    width: 9.25rem;
+    height: 3.5rem;
+    padding: 1rem 0.75rem 1rem 0.75rem;
+    column-gap: 0.625rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.explore-recipe-container:hover{
+    background-color: #f5f5dc;
+}
+.explore-recipe-container:active{
+    background-color: #f2f2df
+}
+
+.explore-recipe-container h5{
+    font-weight: 400;
+}
+
+a{
+    text-decoration: none;
+    color: #000;
+}
+
+.primary-button{
+    width: 8.563rem;
+    height: 3.5rem;
+    padding: 1rem 1.5rem 1rem 1.5rem;
+    background-color: var(--primary-color);
+    outline: none;
+    border: none;
+    border-radius: 0.75rem;
+    color: white;
+    cursor: pointer;
+}
+
+.primary-button:hover{
+    background-color: #bc5d00;
+}
+
+.primary-button:active{
+    background-color: #9c4500;
+}
+
+/* Page title */
+.page-title{
+    width: 100%;
+    height: 5.25rem;
+    padding: 1.5rem 6.25rem;
+    background-color: #fbfae8;
+}
+
+.page-title-container{
+    width: fit-content;
+    height: 2.25rem;
+}
+
+.page-title-container h4{
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+/* Section */
+.section{
+    width: 100%;
+    height: 41.563rem;
+    padding: 3.125rem 6.25rem;
+}
+
+/* Left Container */
+
+.content{
+    width: 100%;
+    height: 35.313rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 2.25rem;
+}
+
+.features-block{
+    width: 32.625rem;
+    height: 29.5rem;
+    padding-bottom: 3.125rem;
+    padding-bottom: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 2.25rem;
+}
+
+.section-title{
+    width: fit-content;
+    height: 2.25rem;
+}
+
+.section-title h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #e67e22;
+}
+
+.paragraph-text{
+    width: 32.625rem;
+    height: 4.5rem;
+    max-width: 50rem;
+}
+
+.paragraph-text p{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #414845;
+}
+
+.email-block{
+    width: 18.25rem;
+    height: 4.5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+}
+
+.email-title{
+    width: fit-content;
+    height: 1.25rem;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #414845;
+}
+
+.email-paragraph{
+    width: fit-content;
+    height: 2.25rem;
+}
+
+.email-paragraph{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #9c4500;
+}
+
+.social-media{
+    width: 18.2rem;
+    height: 5.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.social-heading{
+    width: fit-content;
+    height: 1.25rem;
+}
+
+.social-heading h3{
+    font-weight: 400;
+    font-size: 1.5rem;
+    color: #414845;
+}
+
+.socials{
+    width: 17rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.medias{
+    background-color: #ffdc96;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 6.25rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+/* Contact Form */
+
+.contact-form{
+    width: 32.625rem;
+    height: 35.313rem;
+    padding: 3.125rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 3.063rem;
+    background-color: #f9f9f9;
+    border-radius: 1.5rem;
+}
+
+.contact-title{
+    width: fit-content;
+    height: 2.25rem;
+}
+
+.contact-title h3{
+    font-weight: 600;
+    font-size: 1.5rem;
+    color: #e67e22;
+}
+
+form{
+    width: 100%;
+    height: 23.75rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+}
+
+.input-block{
+    width: 100%;
+    height: 18.75rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.5rem;
+}
+
+.input-box{
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+}
+
+label{
+    width: fit-content;
+    height: 1.5rem;
+    font-weight: 400;
+    font-size: 1rem;
+    color: #1b1b1b;
+}
+
+input{
+    width: 100%;
+    height: 3.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    outline: none;
+    border: 1px solid #e2e2e2;
+}
+
+.text-area-container{
+    width: 100%;
+    height: 7.75rem;
+}
+
+textarea{
+    width: 100%;
+    height: 6.25rem;
+    border-radius: 0.5rem;
+    border: 1px solid #e2e2e2;
+    outline: none;
+    resize: none;
+    padding: 1rem;
+}
+
+.submit-button{
+    width: 10.313rem;
+    height: 3.5rem;
+    border-radius: 0.75rem;
+    background-color: #e67e22;
+    border: none;
+    color: #fff;
+    font-size: 1rem;
+    padding: 1rem 1.5rem;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.submit-button:hover{
+    background-color: #bc5d00;
+    color: #fff;
+}
+
+.submit-button:active{
+    background-color: #9c4500;
+}
+
+/* Footer Section */
+.footer-section{
+    width: 100%;
+    height: 15.375rem;
+    padding: 3.125rem 6.25rem;
+    background-color: #f5f5dc;
+}
+
+.top-footer-container{
+    width: 100%;
+    height: 7.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #1c1c12;
+    padding-bottom: 1.5rem;
+}
+
+.logo-and-tagline{
+    width: 12.75rem;
+    height: 5.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.25rem;
+}
+
+.logo-tagline{
+    width: 7.75rem;
+    height: 3.75rem;
+    padding: 0.5rem 0.625rem;
+}
+
+.tagline-text{
+    width: 12.75rem;
+    height: 1.5rem;
+}
+
+.tagline-text p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.footer-buttons-navigations{
+    width: 7.75rem;
+    height: 6rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+
+.footer-buttons-navigations p{
+    font-size: 1rem;
+    font-weight: 400;
+}
+
+.social-block{
+    width: 17rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+}
+
+.social-block-heading{
+    width: 5.063rem;
+    height: 1.25rem;
+}
+
+.social-block-heading h5{
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.socials{
+    width: 17rem;
+    height: 3rem;
+    display: flex;
+    flex-direction: row;
+    column-gap: 0.5rem;
+}
+
+.media{
+    background-color: white;
+    width: 3rem;
+    height: 3rem;
+    border-radius: 6.25rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.nav:hover{
+    color: #414834;
+}
+
+.nav:active{
+    color: #303030;
+}
+
+/* Right Reserved */
+.right-reserved{
+    width: 100%;
+    height: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 1rem;
+}
+
+.designed-by{
+    width: 10.75rem;
+    height: 1.25rem;
+}
+
+.designed-by p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.016rrem;
+    line-height: 1.25rem;
+}
+
+.abdulbasit{
+    font-weight: 600;
+    font-size: 0.875rem;
+    color: #1c1c12;
+}
+
+.cookit-2025{
+    width: 15rem;
+    height: 1.25rem;
+}
+
+.cookit-2025 p{
+    font-size: 0.875rem;
+    font-weight: 400;
+    letter-spacing: 0.016rem;
+    color: #1c1c12;
+}
+
+
