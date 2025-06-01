@@ -846,15 +846,242 @@ a{
 }
 
 
+@media (max-width: 480px) {
+    .overall-container{
+        height: auto;
+    }
+  .header-container {
+    padding: 1rem;
+    height: auto;
+  }
 
+  .navigations-container {
+    width: 10%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+  .hamburger{
+    width: 2.75rem;
+    height: 2.75rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0.5rem;
+    border: 1px solid #e2e2e2;
+  }
 
+  .nav-container {
+    display: none;
+  }
 
+  .primary-button{
+    display: none;
+  }
 
+  .hero-section {
+    padding: 2rem 1rem;
+    flex-direction: column;
+    align-items: center;
+    height: 46.5rem;
+    width: 100%;
+  }
 
+  .hero-container{
+    display: flex;
+    flex-direction: column;
+    height: 30rem;
+  }
 
+  .hero-text{
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
+ .chef-logo {
+    width: 4rem;
+    height: 4rem;
+}
 
+.heading-paragraph{
+    width: 100%;
+    max-width: 100%;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: -0.1rem;
+}
 
+.responsive-img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain; /* Keeps the SVG aspect ratio clean */
+}
 
+.hero-section-image{
+    width: 100%;
+    height: 10rem;
+}
 
+.hero-section-image img{
+    width: 100%;
+    height: 100%;
+}
+  .heading-text,
+  .hero-paragraph,
+  .bottom-hero-container,
+  .find-container,
+  .cookit {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .heading-text p,
+  .cookit {
+    font-size: 1.75rem;
+    text-align: center;
+  }
+
+  .hero-paragraph p{
+    font-size: 1rem;
+    text-align: center;
+  }
+
+  .find-container{
+    width: 100%;
+  }
+
+  .finder{
+    width: 100%;
+  }
+
+  .ricee{
+    width: fit-content;
+  }
+
+  .ricee p{
+    width: fit-content;
+    font-size: 0.55rem;
+  }
+
+  .bottom-hero-container{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1rem;
+  }
+
+  .search-container {
+    flex-direction: column;
+    align-items: stretch;
+    row-gap: 1rem;
+    height: auto;
+  }
+
+  .search-engine,
+  .search-button {
+    width: 100%;
+  }
+
+  .recipe-block {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .recipe-container,
+  .container-two {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .section{
+    padding: 2rem 1rem;
+  }
+
+  .section-two-container{
+    padding: 2rem 1rem;
+    height: auto;
+  }
+
+  .about-cookit-paragraph{
+    height: 10rem;
+  }
+
+  .about-cookit-paragraph p{
+    font-size: 1rem;
+  }
+
+  .about-us-section-image{
+    width: 23rem;
+    height: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .about-us-section-image img{
+    width: 100%;
+    height: 100%;
+  }
+
+  .section-two-last {
+    flex-direction: column;
+    row-gap: 2rem;
+    height: auto;
+  }
+
+  .features-block {
+    width: 100%;
+    max-width: 100%;
+  }
+
+  .cta-section{
+    padding: 0.5rem;
+  }
+
+  .cta-content{
+    height: auto;
+    width: 100%;
+   
+  }
+
+  .cta-text-title h5{
+    font-size: 0.75rem;
+  }
+
+  .footer-section{
+    width: 23.438rem;
+    height: 25.5rem;
+    padding: 2.25rem 1rem 2.25rem 1rem;
+  }
+
+  .top-footer-container{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .footer-buttons-navigations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: #414845;
+    width:100%;
+  }
+  
+  .nv{
+    background-color: white;
+  }
+
+  .nv p{
+    font-size: 0.75rem;
+  }
+}
