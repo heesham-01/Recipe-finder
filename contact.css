@@ -140,7 +140,7 @@ a{
 }
 
 .features-block{
-    width: 32.625rem;
+    width: 50%;
     height: 29.5rem;
     padding-bottom: 3.125rem;
     padding-bottom: 3.125rem;
@@ -241,7 +241,7 @@ a{
 /* Contact Form */
 
 .contact-form{
-    width: 32.625rem;
+    width: 50%;
     height: 35.313rem;
     padding: 3.125rem;
     display: flex;
@@ -478,6 +478,132 @@ textarea{
     font-weight: 400;
     letter-spacing: 0.016rem;
     color: #1c1c12;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 440px){
+    .overall-container{
+        width: 100%;
+        height: auto;
+    }
+    .header-container {
+        padding: 1rem;
+        height: auto;
+      }
+    
+      .navigations-container {
+        width: 10%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .hamburger{
+        width: 2.75rem;
+        height: 2.75rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        border: 1px solid #e2e2e2;
+      }
+    
+      .nav-container {
+        display: none;
+      }
+    
+      .primary-button{
+        display: none;
+      }
+
+      .page-title{
+        padding-left: 2.75rem;
+      }
+
+      .content{
+        display: flex;
+        flex-direction: column;
+        height: auto;
+      }
+
+      .section{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+      }
+
+      .features-block{
+        width: 100%;
+        padding: 2rem;
+      }
+
+      .paragraph-text{
+        width: 100%;
+      }
+      .paragraph-text p{
+        font-size: 1rem;
+      }
+
+      .contact-form{
+        width: 100%;
+      }
+
+      /* Footer Section */
+.footer-section{
+    width: 100%;
+    height: auto;
+    padding: 2.25rem 1rem 2.25rem 1rem;
+  }
+
+  .top-footer-container{
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    row-gap: 1.5rem;
+  }
+
+  .footer-buttons-navigations{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width:100%;
+  }
+
+  .footer-buttons-navigations p{
+    font-weight: 400;
+    font-size: 1rem;
+  }
+
+  .top-footer-container{
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.5rem;
+    height: 16.25rem;
+  }
+  
+  .social-block{
+    width: 17rem;
+    height: 5rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+  }
+
+  .right-reserved{
+    width: 100%;
+    height: 3.25rem;
+    display: flex;
+    flex-direction: column;
+    row-gap: 1.75rem;
+  }
 }
 
 
