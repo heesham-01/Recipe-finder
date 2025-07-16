@@ -896,12 +896,14 @@ a{
     align-items: center;
     height: 46.5rem;
     width: 100%;
+    height: auto;
   }
 
   .hero-container{
     display: flex;
     flex-direction: column;
     height: 30rem;
+    row-gap: 1rem;
   }
 
   .hero-text{
@@ -1137,5 +1139,8 @@ a{
     flex-direction: column;
     row-gap: 1.75rem;
   }
-
+  
+  .find-container{
+    display: none;
+  }
 }
