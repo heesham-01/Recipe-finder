@@ -1050,8 +1050,18 @@ a{
     max-width: 100%;
   }
 
+  .text-group{
+    width: 100%;
+    row-gap: 0.5rem;
+  }
+
+  .search-paragraph{
+    width: 100%;
+    font-size: 0.75rem;
+  }
+
   .cta-section{
-    padding: 0.5rem;
+    padding: 1rem;
   }
 
   .cta-content{
@@ -1067,10 +1077,15 @@ a{
   }
 
   .cta-text-title{
-    width: 50%;
+    width: 100%;
+    padding: 1rem;
   }
   .cta-text-title h5{
-    font-size: 0.8rem;
+    font-size: 0.65rem;
+  }
+
+  .cta-text-paragraph p{
+    font-size: 0.875rem;
   }
 
   /* Footer Section */

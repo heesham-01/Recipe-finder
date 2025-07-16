@@ -12,6 +12,10 @@
     --primary-color: #e67e22;
 }
 
+.overall-container{
+    height: auto;
+}
+
 /* Header */
 .header-container{
     width: 100%;
@@ -114,7 +118,7 @@ a{
 
 .bottom-container{
     width: 100%;
-    height: 31.313rem;
+    height: auto;
     padding: 3.125rem 6.25rem;
     border-bottom: 1px solid #e2e2e2;
     display: flex;
@@ -392,7 +396,7 @@ a{
 /* Ingredients and Instructions */
 .ingredients-and-instruction{
     width: 100%;
-    height: 49.625rem;
+    height: auto;
     padding: 3.125rem 6.25rem;
     display: flex;
     flex-direction: row;
@@ -403,7 +407,7 @@ a{
 
 .left-content{
     width: 25rem;
-    height: 40.5rem;
+    height: auto;
     max-width: 25rem;
     display: flex;
     flex-direction: column;
@@ -445,7 +449,7 @@ a{
 /* Ingredients details right content */
 .right-content{
     width: 41rem;
-    height: 43.375rem;
+    height: auto;
     display: flex;
     flex-direction: column;
     row-gap: 2.25rem;
@@ -534,7 +538,7 @@ a{
 
 .uploaded-by-section-two{
     width: 100%;
-    height: 20rem;
+    height: auto;
     padding: 2.25rem 6.25rem;
     display: flex;
     flex-direction: column;
@@ -567,7 +571,7 @@ a{
 /* Recommendation recipe container */
 .recipe-container{
     width: 21.5rem;
-    height: 24.75rem;
+    height: auto;
     min-width: 18.75rem;
     max-width: 21.875rem;
     border-radius: 0.75rem;
@@ -746,7 +750,7 @@ a{
 /* Footer */
 .footer-section{
     width: 100%;
-    height: 15.375rem;
+    height: auto;
     padding: 3.125rem 6.25rem;
     background-color: #f5f5dc;
 }
@@ -882,4 +886,182 @@ a{
     font-weight: 400;
     letter-spacing: 0.016rem;
     color: #1c1c12;
+}
+
+.hamburger{
+    display: none;
+}
+
+@media screen and (max-width: 440px){
+     .overall-container{
+        width: 100%;
+        height: auto;
+    }
+    .header-container {
+        padding: 1rem;
+        height: auto;
+      }
+    
+      .navigations-container {
+        width: 10%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+      }
+    
+      .hamburger{
+        width: 2.75rem;
+        height: 2.75rem;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        border-radius: 0.5rem;
+        border: 1px solid #e2e2e2;
+      }
+    
+      .nav-container {
+        display: none;
+      }
+    
+      .primary-button{
+        display: none;
+      }
+
+      .bottom-container{
+        width: 100%;
+        height: auto;
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+        row-gap: 1rem;
+      }
+
+      .right-block{
+        width: 100%;
+      }
+
+      .right-block img{
+        width: 100%;
+      }
+
+      .ingredients-and-instruction{
+        display: flex;
+        flex-direction: column;
+        row-gap: 1rem;
+        padding: 1rem;
+        height: auto;
+      }
+
+      .left-content{
+        width: 100%;
+        height: auto;
+        padding: 1rem;
+      }
+
+      .ingredient-details{
+        font-size: 0.75rem;
+      }
+
+      .bold{
+        font-size: 0.75rem;
+      }
+
+      .right-content{
+        width: 100%;
+        height: auto;
+      }
+
+      .ingredient-right-details{
+        width: 100%;
+        height: auto;
+      }
+
+      .text-container{
+        width: 100%;
+        height: 6rem;
+      }
+
+      .content-one p,
+      .content-two p{
+        font-size: 0.75rem;
+      }
+
+        /* Footer Section */
+        .footer-section{
+            width: 100%;
+            height: auto;
+            padding: 2.25rem 1rem 2.25rem 1rem;
+        }
+
+        .top-footer-container{
+            display: flex;
+            flex-direction: column;
+            height: auto;
+            width: 100%;
+            row-gap: 1.5rem;
+        }
+
+        .footer-buttons-navigations{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width:100%;
+        }
+
+        .footer-buttons-navigations p{
+            font-weight: 400;
+            font-size: 1rem;
+        }
+
+        .top-footer-container{
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.5rem;
+            height: 16.25rem;
+        }
+        
+        .social-block{
+            width: 17rem;
+            height: 5rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 0.75rem;
+        }
+
+        .right-reserved{
+            width: 100%;
+            height: 3.25rem;
+            display: flex;
+            flex-direction: column;
+            row-gap: 1.75rem;
+        }
+
+        .uploaded-by-section-two{
+            padding: 1rem;
+        }
+
+        .size p{
+            font-size: 0.75rem;
+        }
+        .to-be-hidden{
+            display: none;
+        }
+
+        .recommendation-section{
+            padding: 1rem;
+        }
+
+        .people{
+            font-size: 0.75rem;
+        }
+
+        .chinese-rice-image img{
+            width: 100%;
+            height: 100%;
+            border-radius: 0.5rem;
+        }
 }
