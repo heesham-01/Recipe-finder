@@ -849,6 +849,9 @@ a{
     color: #1c1c12;
 }
 
+.modal{
+    display: none;
+}
 
 @media screen and (max-width: 440px) {
     .overall-container{
@@ -880,6 +883,10 @@ a{
     background-color: #ffffff;
     border-radius: 0.5rem;
     border: 1px solid #e2e2e2;
+  }
+
+  .hamburger:active{
+    background-color: #e2e2e2;
   }
 
   .nav-container {
@@ -1142,5 +1149,72 @@ a{
   
   .find-container{
     display: none;
+  }
+/* Hidden by default */
+.modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 100;
+  display: flex;
+  justify-content: flex-end;
+  visibility: hidden;
+  opacity: 0;
+  transition: visibility 0.3s ease, opacity 0.3s ease;
+}
+
+/* Show the modal */
+.modal.show {
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+  .overlay{
+    position: fixed;
+      top: 0;
+      width: 50%;
+      max-width: 23.438rem;
+      background: white;
+      padding: 1rem;
+      border-bottom-left-radius: 0.75rem;
+      border-bottom-right-radius:0.75rem ;
+      height: 26.75rem;
+      display: flex;
+      flex-direction: column;
+      row-gap: 2.5rem;
+  }
+
+  .modal-top{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .modal-bottom{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 1.5rem;
+  }
+
+  .locator{
+    width: 100%;
+    height: 1.5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .locator h5{
+    font-size: 1rem;
+    font-weight: 400;
+    color: #3B0D00;
   }
 }

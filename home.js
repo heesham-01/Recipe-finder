@@ -3,6 +3,20 @@ document.addEventListener("DOMContentLoaded", () => {
     const searchInput = document.getElementById("search-input");
     const searchButton = document.getElementById("search-button");
     const sectionTitle = document.getElementById("section-title");
+    const openBtn = document.getElementById('open');
+    const closeBtn = document.getElementById('close');
+    const modal = document.getElementById('modal');
+    
+
+    // Function to display hamburger in the mobile view
+    openBtn?.addEventListener('click', () => {
+    modal.classList.add('show');
+    });
+
+    closeBtn?.addEventListener('click', () => {
+    modal.classList.remove('show');
+    });
+
 
     // Search on button click
     searchButton.addEventListener("click", () => {
@@ -181,10 +195,10 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 
-
+// This will display a succes message
   const form = document.querySelector('form');
   form.addEventListener('submit', async function (e) {
-    e.preventDefault(); // prevent default redirect
+    e.preventDefault(); // this prevent default redirection
 
     const formData = new FormData(form);
 
@@ -208,4 +222,4 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-
+ 
